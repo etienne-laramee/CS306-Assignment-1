@@ -1,16 +1,16 @@
 # Phase 1
 I propose to add the following 5 instructions to the instructions set of my CPU:
-## Subtraction
+## 1. Subtraction
 **Subtraction** is a fundamental component of arithmetic operations. Although subtraction can be emulated using addition and two's complement, doing so requires additional instructions and CPU cycles. Since a subtraction circuit can be efficiently built by extending an existing adder with minimal components (e.g., using half-adders and subtractors), its inclusion is a low-cost, high-value enhancement to the ALU.
-## Multiplication
+## 2. Multiplication
 **Multiplication** of unsigned integers is composed of repeated additions. While it can be emulated in software, hardware multiplication significantly reduces instruction count and execution time, especially for operations in graphics, signal processing, and mathematical computations. It is a standard operation in most instruction set architectures.
-## XOR
+## 3. XOR
 **XOR** (exclusive OR) compares two binary inputs and returns 1 where the bits differ. This operation is essential for applications such as parity checks, cryptographic algorithms, and network protocols. Its versatility and computational efficiency justify its inclusion in the instruction set.
 > GeeksforGeeks. (2021). _Bitwise XOR operator in programming_. [https://www.geeksforgeeks.org/bitwise-xor-operator-in-programming/](https://www.geeksforgeeks.org/bitwise-xor-operator-in-programming/)
-## NAND
+## 4. NAND
 **NAND** is a universal logic gate that can be used to construct all other logic gates, including AND, OR, and NOT. Including a NAND instruction adds flexibility to the ALU, allowing efficient implementation of complex logical operations.
 > ChipVerify. (n.d.). _Universal gates - NAND and NOR_. [https://www.chipverify.com/digital-fundamentals/universal-gates](https://www.chipverify.com/digital-fundamentals/universal-gates)
-## Two’s Complement
+## 5. Two’s Complement
 **Two’s complement** is used to represent signed integers and enables the CPU to perform subtraction and other signed arithmetic operations. It simplifies circuit design and allows for a unified method of handling both positive and negative integers.
 > Franklin, T. (2002). _Two's complement representation_. Cornell University. [https://www.cs.cornell.edu/~tomf/notes/cps104/twoscomp.htm](https://www.cs.cornell.edu/~tomf/notes/cps104/twoscomp.htm)
 
